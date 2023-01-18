@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #wrap {
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        z-index: 99;
+        position: relative;
+        background-color: #21dba0;
+      }
+      .navbar {
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+      }
+      .navbar li {
+        height: auto;
+        width: 135px;
+        float: left;
+        text-align: center;
+        list-style: none;
+        font: normal bold 13px/1em Arial, Verdana, Helvetica;
+        padding: 0;
+        margin: 0;
+        background-color: #82c12a;
+      }
+      .navbar a {
+        padding: 18px 0;
+        border-left: 1px solid #b73e7b;
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+      .navbar li:hover
+       {
+        background-color: #7c7525;
+      }
+      .navbar li ul {
+        display: none;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar li:hover ul {
+        display: block;
+      }
+      .navbar li ul li {
+        background-color: #662d2d;
+      }
+      .navbar li ul li a {
+        border-left: 1px solid #2b8e2b;
+        border-right: 1px solid #34237f;
+        border-top: 1px solid #45a8cd;
+        border-bottom: 1px solid #29684f;
+      }
+      .navbar li ul li a:hover {
+        background-color: #a43153;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <ul class="navbar">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Skills</a>
+          <ul>
+            <li>
+              <a href="https://www.geeksforgeeks.org/c-language-introduction/" target = "_blank">C</a>
+            </li>
+            <li>
+              <a href="https://www.geeksforgeeks.org/c-programming-basics/" target = "_blank">C++</a>
+            </li>
+            <li>
+              <a href="https://www.geeksforgeeks.org/python-programming-language/" target = "_blank">Python</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Quizzes</a>
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/c/c_quiz.php" target = "_blank">C</a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/cpp/cpp_quiz.asp" target = "_blank">C++</a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/python/python_quiz.asp" target = "_blank">Python</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
